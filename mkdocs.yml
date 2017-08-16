@@ -2,7 +2,7 @@ site_name: Online-Dokumentationen
 theme: material
 site_description: A Material Design theme for MkDocs
 site_author: Meinolf Droste
-site_url: http://mdwp-mkdocs-cms.netlify.com/
+site_url: https://tlcdoc.netlify.com/
 
 extra:
   social:
@@ -22,8 +22,8 @@ extra:
 extra_css:
   - 'stylesheets/extra.css'
 
-repo_name: 'capriosa/mkdocs-cms'
-repo_url: 'https://github.com/capriosa/mkdocs-cms'
+repo_name: 'tlcMattLarson/mkdocs-cms-2'
+repo_url: 'https://github.com/tlcMattLarson/mkdocs-cms-2'
 
 # Copyright
 copyright: '<a href="https://www.mdwp.de">mdwp</a>'
@@ -59,7 +59,7 @@ pages:
   - 'MkDocs Dokumentation': 'mkdocs.md'
   - 'Getting started': 'getting-started.md'
   - 'HTML-Elemente': 'specimen.md'
-  - 'Anpassungen': 'customization.md' 
+  - 'Anpassungen': 'customization.md'
   - Erweiterungen:
     - 'Admonition': 'extensions/admonition.md'
     - 'CodeHilite': 'extensions/codehilite.md'
