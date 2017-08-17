@@ -31,6 +31,8 @@ copyright: '<a href="http://tlccompanies.com">TLC Companies</a>'
 # Theme directory
 theme_dir: readthedocs
 
+docs_dir: docs
+
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
