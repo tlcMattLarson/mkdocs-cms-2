@@ -15,7 +15,7 @@
   {%- block htmltitle %}
   <title>{% if page and page.title and not page.is_hompage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
   {%- endblock %}
-  
+
   {%- block styles %}
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
@@ -74,16 +74,18 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        {%- block site_nav %}
+
+{%- block site_nav %}
 	<ul class="current">
 	  {% set navlevel = 1 %}
-          {% for nav_item in nav %}
-            <li class="toctree-l{{ navlevel }}{% if nav_item.active and not nav_item.children %} current{%endif%}">
-		{% include 'nav.html' %}
+    {% for nav_item in nav %}
+      <li class="toctree-l{{ navlevel }}{% if nav_item.active and not nav_item.children %} current{%endif%}">
+    		{% include 'nav.html' %}
 	    </li>
-          {% endfor %}
-        </ul>
-	{%- endblock %}
+    {% endfor %}
+  </ul>
+{%- endblock %}
+
       </div>
       &nbsp;
     </nav>
@@ -114,7 +116,7 @@
       </div>
 
     </section>
-    
+
   </div>
 
   {% include "versions.html" %}
