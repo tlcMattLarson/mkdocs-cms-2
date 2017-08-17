@@ -1,5 +1,5 @@
 site_name: Online-Dokumentationen
-theme: material
+theme: readthedocs
 site_description: A Material Design theme for MkDocs
 site_author: Meinolf Droste
 site_url: https://tlcdoc.netlify.com/
@@ -29,7 +29,7 @@ repo_url: 'https://github.com/tlcMattLarson/mkdocs-cms-2'
 copyright: '<a href="https://www.mdwp.de">mdwp</a>'
 
 # Theme directory
-theme_dir: material
+#theme_dir: material
 
 # Extensions
 markdown_extensions:
