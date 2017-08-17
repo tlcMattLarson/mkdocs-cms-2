@@ -1,5 +1,5 @@
 {%- if nav_item.url %}
-    <li><a class="{% if nav_item.active%}current{%endif%}" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+    <li><a class="{% if nav_item.active%}current{%endif%}{%- if nav_item == page or nav_item.children %} collapsible-nav{%endif%}" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
       {%- if nav_item == page or nav_item.children %}
           <ul class="subnav" style="display:none;">
               {%- if nav_item == page %}
@@ -18,7 +18,7 @@
       {%- endif %}
     </li>
 {%- else %}
-    <li><span class="caption-text {% if nav_item.active%} current{%endif%}">{{ nav_item.title }}</span>
+    <li><span class="caption-text {% if nav_item.active%} current{%endif%}{%- if nav_item == page or nav_item.children %} collapsible-nav{%endif%}">{{ nav_item.title }}</span>
       {%- if nav_item == page or nav_item.children %}
           <ul class="subnav" style="display:none;">
               {%- if nav_item == page %}
