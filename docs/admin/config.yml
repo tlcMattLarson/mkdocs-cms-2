@@ -3,8 +3,8 @@ backend:
   repo: tlcMattLarson/mkdocs-cms-2
   branch: master
 
-public_folder: "site"
-media_folder: "site/assets"
+public_folder: "/"
+media_folder: "/assets"
 publish_mode: editorial_workflow
 
 collections:

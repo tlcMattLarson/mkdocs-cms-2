@@ -26,7 +26,7 @@ repo_name: 'tlcMattLarson/mkdocs-cms-2'
 repo_url: 'https://github.com/tlcMattLarson/mkdocs-cms-2'
 
 # Copyright
-copyright: '<a href="https://tlccompanies.com">TLC Companies</a>'
+copyright: '<a href="http://tlccompanies.com">TLC Companies</a>'
 
 # Theme directory
 theme_dir: readthedocs
