@@ -56,4 +56,4 @@ markdown_extensions:
 
 # Page tree
 pages:
-  - 'MkDocs-CMS': 'index.md'
+  - 'Home': 'index.md'
