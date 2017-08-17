@@ -57,5 +57,5 @@ markdown_extensions:
   - pymdownx.tilde
 
 # Page tree
-pages:
-  - 'Home': 'index.md'
+#pages:
+#  - 'Home': 'index.md'
