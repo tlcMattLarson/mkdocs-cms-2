@@ -1,17 +1,17 @@
-site_name: Online-Dokumentationen
+site_name: TLC Documentation
 theme: readthedocs
-site_description: A Material Design theme for MkDocs
-site_author: Meinolf Droste
+site_description: TLC IT Documentation Hub
+site_author: TLC Companies IT Dept
 site_url: https://tlcdoc.netlify.com/
 
 extra:
   social:
     - type: 'github'
-      link: 'https://github.com/capriosa'
+      link: ''
     - type: 'twitter'
-      link: 'https://twitter.com/mdwp'
+      link: ''
     - type: 'facebook'
-      link: 'https://facebook.com/mdwp.de'
+      link: ''
   feature:
     tabs: true
   palette:
@@ -26,7 +26,7 @@ repo_name: 'tlcMattLarson/mkdocs-cms-2'
 repo_url: 'https://github.com/tlcMattLarson/mkdocs-cms-2'
 
 # Copyright
-copyright: '<a href="https://www.mdwp.de">mdwp</a>'
+copyright: '<a href="tlccompanies.com">TLC Companies</a>'
 
 # Theme directory
 #theme_dir: material
@@ -41,6 +41,18 @@ markdown_extensions:
   - markdown.extensions.toc(permalink=true)
   - pymdownx.superfences
   - pymdownx.highlight
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
 
 # Page tree
 pages:
