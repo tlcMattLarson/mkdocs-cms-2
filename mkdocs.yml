@@ -29,7 +29,7 @@ repo_url: 'https://github.com/tlcMattLarson/mkdocs-cms-2'
 copyright: '<a href="tlccompanies.com">TLC Companies</a>'
 
 # Theme directory
-#theme_dir: material
+theme_dir: readthedocs
 
 # Extensions
 markdown_extensions:
