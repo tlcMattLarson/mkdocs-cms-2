@@ -1,0 +1,4 @@
+a.collapsible-nav::after{
+  content:">";
+  float:right;
+}
