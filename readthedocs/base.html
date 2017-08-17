@@ -123,6 +123,10 @@
 
   {%- block scripts %}
     <script src="{{ base_url }}/js/theme.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="{{ base_url }}/js/custom.js"></script>
     {%- for path in extra_javascript %}
       <script src="{{ path }}"></script>
     {%- endfor %}
