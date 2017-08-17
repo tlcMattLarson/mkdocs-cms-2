@@ -2,3 +2,7 @@ a.collapsible-nav::after{
   content:">";
   float:right;
 }
+
+nav span.caption-text{
+  cursor: pointer;
+}
