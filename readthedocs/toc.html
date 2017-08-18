@@ -1,9 +1,9 @@
 {% for toc_item in page.toc %}
-    <li class="toctree-l{{ navlevel + 1 }}{% if toc_item.children %} collapsible-nav{% endif %}"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+    <li class="toctree-l{{ navlevel + 1 }}{% if toc_item.children %} collapsible-nav{% endif %} n-toc-item"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
     {% if toc_item.children %}
         <ul class="subnav" style="display:none;">
         {% for toc_item in toc_item.children %}
-            <li class="{% if toc_item.children %}collapsible-nav{% endif %}"><a class="toctree-l{{ navlevel + 2 }}{% if toc_item.children %} collapsible-nav{% endif %} n-toc" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+            <li class="{% if toc_item.children %}collapsible-nav{% endif %} n-toc-sub-item"><a class="toctree-l{{ navlevel + 2 }}{% if toc_item.children %} collapsible-nav{% endif %} n-toc" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
         {% endfor %}
         </ul>
     {% endif %}
