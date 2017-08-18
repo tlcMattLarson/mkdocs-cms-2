@@ -9,20 +9,83 @@ publish_mode: editorial_workflow
 
 collections:
   - name: "doc"
-    label: "Doc"
-    folder: "docs"
+    label: "Documentation"
+    folder: "docs/documentation"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "string"}
-  - name: "extensions"
-    label: "Extensions"
-    folder: "docs/extensions"
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "markup"
+    label: "Markup Examples"
+    folder: "docs/markup"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Publish Date", name: "date", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "codecss"
+    label: "Code Samples - CSS"
+    folder: "docs/codecss"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "codejs"
+    label: "Code Samples - JS"
+    folder: "docs/codejs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "codecontrollers"
+    label: "Code Samples - Controllers"
+    folder: "docs/codecontrollers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "codecontrollers"
+    label: "Code Samples - Views"
+    folder: "docs/codeviews"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "codeviewmodels"
+    label: "Code Samples - View Models"
+    folder: "docs/codeviewmodels"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "codecsharp"
+    label: "Code Samples - C#"
+    folder: "docs/codecsharp"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+  - name: "codeother"
+    label: "Code Samples - Other"
+    folder: "docs/codeother"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
