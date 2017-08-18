@@ -8,6 +8,18 @@ li.collapsible-nav-children::after{
   right:15px;
 }
 
+.wy-menu-vertical li ul.subnav ul.subnav {
+    padding-left: 0;
+}
+
+.wy-menu-vertical ul.subnav ul.subnav a {
+    padding: .4045em 3.854em;
+}
+
+.wy-menu-vertical ul.subnav ul.subnav ul.subnav a {
+    padding: .4045em 4.854em;
+}
+
 nav li{
   position:relative;
 }
