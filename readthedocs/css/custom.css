@@ -27,3 +27,9 @@ nav li{
 nav span.caption-text{
   cursor: pointer;
 }
+
+.activeNavItem {
+    background-color: #2980B9;
+    cursor: pointer;
+    color: #fff;
+}
