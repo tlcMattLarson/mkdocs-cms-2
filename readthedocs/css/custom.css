@@ -1,5 +1,5 @@
 a.collapsible-nav::after,
-a.collapsible-nav::after{
+span.collapsible-nav::after{
   content:">";
   float:right;
 }
