@@ -1,9 +1,6 @@
-a.collapsible-nav::after,
-span.collapsible-nav::after,
-a.collapsible-nav-page::after,
-span.collapsible-nav-page::after,
-a.collapsible-nav-children::after,
-span.collapsible-nav-children::after{
+li.collapsible-nav::after,
+li.collapsible-nav-page::after,
+li.collapsible-nav-children::after{
   content:">";
   float:right;
 }

@@ -3,7 +3,7 @@
     {% if toc_item.children %}
         <ul class="subnav" style="display:none;">
         {% for toc_item in toc_item.children %}
-            <li><a class="toctree-l{{ navlevel + 2 }}{% if toc_item.children %} collapsible-nav{% endif %} n-toc" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+            <li class="{% if toc_item.children %}collapsible-nav{% endif %}"><a class="toctree-l{{ navlevel + 2 }}{% if toc_item.children %} collapsible-nav{% endif %} n-toc" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
         {% endfor %}
         </ul>
     {% endif %}
