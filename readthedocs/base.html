@@ -80,7 +80,7 @@
 	<ul class="current">
 	  {% set navlevel = 1 %}
     {% for nav_item in nav %}
-      <li class="toctree-l{{ navlevel }}{% if nav_item.active and not nav_item.children %} current{%endif%}{% if nav_item.children %} collapsible-nav{%endif%}">
+      <li class="toctree-l{{ navlevel }}{% if nav_item.active and not nav_item.children %} current{%endif%}{% if nav_item.children %} collapsible-nav{%endif%} n-outer">
     		{% include 'nav.html' %}
 	    </li>
     {% endfor %}
