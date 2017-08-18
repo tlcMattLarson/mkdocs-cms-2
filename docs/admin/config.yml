@@ -17,7 +17,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "markup"
+  - name: "Markup Examples"
     label: "Markup Examples"
     folder: "docs/markup"
     create: true
