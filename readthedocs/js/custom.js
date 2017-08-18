@@ -3,7 +3,7 @@ $(document).ready(function(){
 
   $("nav .wy-menu li").click(function(){
     var navID = location.href.substr(location.href.lastIndexOf('/') + 1);
-    $(".activeNavItem").removeClass('active');
+    $(".activeNavItem").removeClass('activeNavItem');
     $("nav a[href^='"+ navID + "']").addClass('activeNavItem');
 
     $(this).children(".subnav").css("display","inherit");
@@ -11,5 +11,6 @@ $(document).ready(function(){
   })
 
   var navID = location.href.substr(location.href.lastIndexOf('/') + 1);
+  $(".activeNavItem").removeClass('activeNavItem');
   $("nav a[href^='"+ navID + "']").addClass('activeNavItem');
 })
