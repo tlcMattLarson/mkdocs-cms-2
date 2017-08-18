@@ -6,6 +6,7 @@ li.collapsible-nav-children::after{
   position:absolute;
   top:5px;
   right:15px;
+  color: #6d6d6d;
 }
 
 .wy-menu-vertical li ul.subnav ul.subnav {
