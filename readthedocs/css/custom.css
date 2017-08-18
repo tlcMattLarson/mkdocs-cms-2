@@ -3,6 +3,13 @@ li.collapsible-nav-page::after,
 li.collapsible-nav-children::after{
   content:">";
   float:right;
+  position:absolute;
+  top:5px;
+  right:15px;
+}
+
+nav li{
+  position:relative;
 }
 
 nav span.caption-text{
