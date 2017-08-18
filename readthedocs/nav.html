@@ -9,7 +9,7 @@
               {%- if nav_item.children %}
                   {%- set navlevel = navlevel + 1%}
                   {%- for nav_item in nav_item.children %}
-                      <li class="{% if navlevel > 2 %}toctree-l{{ navlevel }}{% endif %}{% if nav_item.active%} current{%endif%}{% if nav_item == page%} collapsible-nav-page{%endif%}{% if nav_item.children%} collapsible-nav-children{%endif%}">
+                      <li class="{% if navlevel > 2 %}toctree-l{{ navlevel }}{% endif %}{% if nav_item.active%} current{%endif%}{% if nav_item == page%} collapsible-nav-page{%endif%}{% if nav_item.children%} collapsible-nav-children{%endif%} n-url-children">
                           {% include 'nav.html' %}
                       </li>
                   {%- endfor %}
@@ -28,7 +28,7 @@
               {%- if nav_item.children %}
                   {%- set navlevel = navlevel + 1%}
                   {%- for nav_item in nav_item.children %}
-                      <li class="{% if navlevel > 2 %}toctree-l{{ navlevel }}{% endif %}{% if nav_item.active%} current{%endif%}{% if nav_item == page%} collapsible-nav-page{%endif%}{% if nav_item.children%} collapsible-nav-children{%endif%}">
+                      <li class="{% if navlevel > 2 %}toctree-l{{ navlevel }}{% endif %}{% if nav_item.active%} current{%endif%}{% if nav_item == page%} collapsible-nav-page{%endif%}{% if nav_item.children%} collapsible-nav-children{%endif%} n-not-url-children">
                           {% include 'nav.html' %}
                       </li>
                   {%- endfor %}
