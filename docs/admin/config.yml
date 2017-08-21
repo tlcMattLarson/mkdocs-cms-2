@@ -26,18 +26,18 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "code-css"
+  - name: "code-CSS"
     label: "Code Samples - CSS"
-    folder: "docs/code-css"
+    folder: "docs/code-CSS"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "code-js"
+  - name: "code-JS"
     label: "Code Samples - JS"
-    folder: "docs/code-js"
+    folder: "docs/code-JS"
     create: true
     slug: "{{slug}}"
     fields:
@@ -71,9 +71,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "code-c-sharp"
-    label: "Code Samples - C#"
-    folder: "docs/code-c-sharp"
+  - name: "code-VB"
+    label: "Code Samples - VB"
+    folder: "docs/code-VB"
     create: true
     slug: "{{slug}}"
     fields:
