@@ -21,6 +21,11 @@ li.collapsible-nav-children::after{
     padding: .4045em 4.854em;
 }
 
+.wy-menu-vertical span:hover {
+    background-color: #4e4a4a;
+    cursor: pointer;
+}
+
 nav li{
   position:relative;
 }
