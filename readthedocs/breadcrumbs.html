@@ -14,12 +14,7 @@
     <li class="wy-breadcrumbs-aside">
       {%- block repo %}
       {% if page and page.edit_url %}
-        <a href="{{ page.edit_url }}"
-        {%- if config.repo_name|lower == 'github' %}
-          class="icon icon-github"
-        {%- elif config.repo_name|lower == 'bitbucket' %}
-          class="icon icon-bitbucket"
-        {% endif %}> Edit on <a href="/admin">Admin Page</a>
+        <a href="/admin">Edit on Admin Page</a>
       {% endif %}
       {%- endblock %}
     </li>
