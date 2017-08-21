@@ -9,6 +9,10 @@ li.collapsible-nav-children::after{
   color: #6d6d6d;
 }
 
+.wy-menu-vertical li > a, .wy-menu-vertical li > span {
+    text-transform: capitalize;
+}
+
 .wy-menu-vertical li ul.subnav ul.subnav {
     padding-left: 0;
 }

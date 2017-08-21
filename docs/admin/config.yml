@@ -26,27 +26,27 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "codecss"
+  - name: "code-css"
     label: "Code Samples - CSS"
-    folder: "docs/codecss"
+    folder: "docs/code-css"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "codejs"
+  - name: "code-js"
     label: "Code Samples - JS"
-    folder: "docs/codejs"
+    folder: "docs/code-js"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "codecontrollers"
+  - name: "code-controllers"
     label: "Code Samples - Controllers"
-    folder: "docs/codecontrollers"
+    folder: "docs/code-controllers"
     create: true
     slug: "{{slug}}"
     fields:
@@ -62,27 +62,27 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "codeviewmodels"
+  - name: "code-view-models"
     label: "Code Samples - View Models"
-    folder: "docs/codeviewmodels"
+    folder: "docs/code-view-models"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "codecsharp"
+  - name: "code-c-sharp"
     label: "Code Samples - C#"
-    folder: "docs/codecsharp"
+    folder: "docs/code-c-sharp"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-  - name: "codeother"
+  - name: "code-other"
     label: "Code Samples - Other"
-    folder: "docs/codeother"
+    folder: "docs/code-other"
     create: true
     slug: "{{slug}}"
     fields:
