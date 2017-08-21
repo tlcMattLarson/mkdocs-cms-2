@@ -44,3 +44,154 @@ a.current {
     cursor: pointer;
     color: #fff;
 }
+
+/* SYNTAX HIGHLIGHTER STYLES */
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    color: #333;
+    -webkit-text-size-adjust: none
+}
+
+.diff .hljs-header,.hljs-comment,.hljs-javadoc {
+    color: #998;
+    font-style: italic
+}
+
+.css .rule .hljs-keyword,.hljs-keyword,.hljs-request,.hljs-status,.hljs-subst,.hljs-winutils,.nginx .hljs-title {
+    color: #2959f5;
+    font-weight: 700
+}
+
+.hljs-hexcolor,.hljs-number,.ruby .hljs-constant {
+    color: #a60bde
+}
+
+.hljs-dartdoc,.hljs-phpdoc,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula {
+    color: #d14
+}
+
+.hljs-id,.hljs-title,.scss .hljs-preprocessor {
+    color: #900;
+    font-weight: 700
+}
+
+.hljs-list .hljs-keyword,.hljs-subst {
+    font-weight: 400
+}
+
+.hljs-class .hljs-title,.hljs-type,.tex .hljs-command,.vhdl .hljs-literal {
+    color: #de365c;
+    font-weight: 700;
+}
+
+.django .hljs-tag .hljs-keyword,.hljs-rule .hljs-property,.hljs-tag,.hljs-tag .hljs-title {
+    color: navy;
+    font-weight: 400
+}
+
+.hljs-attribute,.hljs-name,.hljs-variable,.lisp .hljs-body {
+    color: #3b9200
+}
+
+.hljs-regexp {
+    color: #009926
+}
+
+.clojure .hljs-keyword,.hljs-prompt,.hljs-symbol,.lisp .hljs-keyword,.ruby .hljs-symbol .hljs-string,.scheme .hljs-keyword,.tex .hljs-special {
+    color: #990073
+}
+
+.hljs-built_in {
+    color: #0086b3
+}
+
+.hljs-cdata,.hljs-doctype,.hljs-pi,.hljs-pragma,.hljs-preprocessor,.hljs-shebang {
+    color: #999;
+    font-weight: 700
+}
+
+.hljs-deletion {
+    background: #fdd
+}
+
+.hljs-addition {
+    background: #dfd
+}
+
+.diff .hljs-change {
+    background: #0086b3
+}
+
+.hljs-chunk {
+    color: #aaa
+}
+
+li.collapsible-nav-children::after,li.collapsible-nav-page::after,li.collapsible-nav::after {
+    content: ">";
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: #6d6d6d
+}
+
+.wy-menu-vertical li>a,.wy-menu-vertical li>span {
+    text-transform: capitalize
+}
+
+.wy-menu-vertical li ul.subnav ul.subnav {
+    padding-left: 0
+}
+
+.wy-menu-vertical ul.subnav ul.subnav a {
+    padding: .4045em 3.854em
+}
+
+.wy-menu-vertical ul.subnav ul.subnav ul.subnav a {
+    padding: .4045em 4.854em
+}
+
+.wy-menu-vertical span:hover {
+    background-color: #4e4a4a;
+    cursor: pointer
+}
+
+nav li {
+    position: relative
+}
+
+nav span.caption-text {
+    cursor: pointer
+}
+
+.activeNavItem,a.current {
+    background-color: #2980b9;
+    cursor: pointer;
+    color: #fff
+}
+
+.md-footer-nav__title {
+    font-size: 1.5rem;
+    padding: 0
+}
+
+.md-footer-nav__link {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.md-footer-nav__link--next,.md-footer-nav__link--prev {
+    color: #fff
+}
+
+.md-typeset h1 {
+    margin: 0 0 0
+}
+
+@media only screen and (min-width: 76.25em) {
+    .md-tabs~.md-main .md-nav--primary>.md-nav__list>.md-nav__item--nested {
+        font-size:15px
+    }
+}
