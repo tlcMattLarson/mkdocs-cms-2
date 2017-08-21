@@ -2,7 +2,7 @@
 title: Iframes
 date: 2017-08-21T17:06:46.287Z
 ---
-<img src="/assets/fullscreen-iframe.PNG" alt="Fullscreen Iframe Example" width="500" height="auto"/>
+<img src="/assets/fullscreen-iframe.PNG" alt="Fullscreen Iframe Example"/>
 
 # Full Page Embeds
 
@@ -11,7 +11,7 @@ If you want to embed a full page via an iframe, you will need to add it to the v
 ``` html
     <div class="embed-responsive tlc-iframe-box clearfix">
         <iframe class="embed-responsive-item clearfix" src="url here" allowfullscreen></iframe>      
-    </div> 
+    </div>
 ```
 
 You will also need to include the following script file somewhere in the view:
@@ -19,5 +19,3 @@ You will also need to include the following script file somewhere in the view:
 ``` vbnet
     @Html.RequireScriptFile("/Scripts/tlciframes.js", 1, TLC.Constants.SCRIPTS_FOOTER)
 ```
-
-
