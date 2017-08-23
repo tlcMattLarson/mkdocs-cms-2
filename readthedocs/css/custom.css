@@ -1,3 +1,7 @@
+tbody:nth-child(odd) {
+    background-color: #dadada;
+}
+
 li.collapsible-nav::after,
 li.collapsible-nav-page::after,
 li.collapsible-nav-children::after{
