@@ -54,7 +54,7 @@ With HTML5, a lot of input types have been added to help with handling more comp
 They can be implemented like so:
 
 ``` html
-<input type="button" value="Click me" onclick="msg()">
+<input type="value">
 ```
 
 Here is a table with all the various types:
@@ -153,4 +153,5 @@ Here is a table with all the various types:
     <td>Defines a week and year control (no time zone)</td>
   </tr>
  </tbody></table>
-**Source: [W3 Schools](https://www.w3schools.com/tags/att_input_type.asp)
+*Source: [W3 Schools](https://www.w3schools.com/tags/att_input_type.asp)*
+
