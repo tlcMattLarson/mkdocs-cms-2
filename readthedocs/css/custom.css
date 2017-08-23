@@ -13,6 +13,7 @@ li.collapsible-nav-children::after{
   color: #6d6d6d;
 }
 
+
 .wy-menu-vertical li > a, .wy-menu-vertical li > span {
     text-transform: capitalize;
 }
@@ -54,7 +55,7 @@ a.current {
 .hljs {
     display: block;
     overflow-x: auto;
-    color: #333;
+    color: #fff;
     -webkit-text-size-adjust: none;
     background-color: #383838;
     border-radius: 6px;
