@@ -59,10 +59,13 @@ They can be implemented like so:
 
 Here is a table with all the various types:
 <table class="w3-table-all notranslate">
-  <tbody><tr>
-  <th style="width:22%">Value</th>
-    <th>Description</th>
-  </tr>
+  <thead>
+    <tr>
+      <th style="width:22%">Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
   <tr>
     <td>button</td>
     <td>Defines a clickable button (mostly used with a JavaScript to activate a script)</td>
@@ -154,4 +157,5 @@ Here is a table with all the various types:
   </tr>
  </tbody></table>
 *Source: [W3 Schools](https://www.w3schools.com/tags/att_input_type.asp)*
+
 
