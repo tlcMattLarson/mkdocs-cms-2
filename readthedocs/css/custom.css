@@ -51,7 +51,9 @@ a.current {
     display: block;
     overflow-x: auto;
     color: #333;
-    -webkit-text-size-adjust: none
+    -webkit-text-size-adjust: none;
+    background-color: #383838;
+    border-radius: 6px;
 }
 
 .diff .hljs-header,.hljs-comment,.hljs-javadoc {
@@ -60,20 +62,20 @@ a.current {
 }
 
 .css .rule .hljs-keyword,.hljs-keyword,.hljs-request,.hljs-status,.hljs-subst,.hljs-winutils,.nginx .hljs-title {
-    color: #2959f5;
+    color: #6186ff;
     font-weight: 700
 }
 
 .hljs-hexcolor,.hljs-number,.ruby .hljs-constant {
-    color: #a60bde
+    color: #d768ff
 }
 
 .hljs-dartdoc,.hljs-phpdoc,.hljs-string,.hljs-tag .hljs-value,.tex .hljs-formula {
-    color: #d14
+    color: #ff4c79
 }
 
 .hljs-id,.hljs-title,.scss .hljs-preprocessor {
-    color: #900;
+    color: #f75656;
     font-weight: 700
 }
 
@@ -83,24 +85,24 @@ a.current {
 
 .hljs-class .hljs-title,.hljs-type,.tex .hljs-command,.vhdl .hljs-literal {
     color: #de365c;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .django .hljs-tag .hljs-keyword,.hljs-rule .hljs-property,.hljs-tag,.hljs-tag .hljs-title {
-    color: navy;
+    color: #ffb67c;
     font-weight: 400
 }
 
 .hljs-attribute,.hljs-name,.hljs-variable,.lisp .hljs-body {
-    color: #3b9200
+    color: #92ff48
 }
 
 .hljs-regexp {
-    color: #009926
+    color: #56f77e
 }
 
 .clojure .hljs-keyword,.hljs-prompt,.hljs-symbol,.lisp .hljs-keyword,.ruby .hljs-symbol .hljs-string,.scheme .hljs-keyword,.tex .hljs-special {
-    color: #990073
+    color: #f94cce
 }
 
 .hljs-built_in {
