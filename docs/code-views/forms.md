@@ -115,7 +115,7 @@ Here is a table with all the various types:
     <td>Defines a week and year control (no time zone)</td>
   </tr>
  </tbody></table>
-*Source: <a href="https://www.w3schools.com/tags/att_input_type.asp" target="_top">W3 Schools</a>*
+*Source: <a href="https://www.w3schools.com/tags/att_input_type.asp" target="_blank">W3 Schools</a>*
 
 ## TextArea
 
@@ -155,6 +155,7 @@ Then you will need to add a textarea element to your form.
 ```
 
 Now you should have a perfectly functioning version of the Trumbowyg textarea editor.
+
 
 
 
