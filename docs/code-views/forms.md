@@ -176,7 +176,7 @@ First, there are the input specific validation messages. These can be added like
 @Html.ValidationMessageFor(Function(x) x.Item, "", New With {.class = "text-danger"})
 ```
 
-Second, there are form summary validation messages. These are generally placed at the top of the form and can be added like so:
+Second, there are form summary validation messages. These are generally placed at the top of the form and can be added like so: 
 
 ``` vbnet
 @Html.ValidationSummary(True, "", New With {.class = "text-danger"})
