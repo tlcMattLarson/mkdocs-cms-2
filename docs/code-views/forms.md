@@ -176,14 +176,14 @@ First, there are the input specific validation messages. These can be added like
 @Html.ValidationMessageFor(Function(x) x.Item, "", New With {.class = "text-danger"})
 ```
 
-Second, there are form summary validation messages. These are generally placed at the top of the form and can be added like so: 
+Second, there are form summary validation messages. These are generally placed at the top of the form and can be added like so:
 
 ``` vbnet
 @Html.ValidationSummary(True, "", New With {.class = "text-danger"})
 ```
 
 !!! note "OPINION"
-    The second parameters in the validation elements, the empty strings, are validation messages. They are most likely for adding custom validation messages, however, since the messages are being dynamically generated, we leave them blank.
+    The second parameters in the validation elements, the empty strings, are validation messages. They are most likely for adding custom validation messages, however, since the messages are being dynamically generated, we leave them blank.  
     Matt L. - 08/24/2017
 
 ## Disable Validation
