@@ -154,7 +154,7 @@ Now you should have a perfectly functioning version of the Trumbowyg textarea ed
 
 # Client-Side Validation
 
-Because we use JQuery Unobtrusive Validation, you are able to display validation messages on the client-side machines, without having to perform a page refresh.
+Because we use JQuery Unobtrusive Validation, you are able to display validation messages on the client-side machines, without having to perform a page refresh. 
 
 This works because validation attributes have been defined on the server-side entities/models, which then allow the jquery library to generate the required front-end code with very little custom coding on our part.
 
