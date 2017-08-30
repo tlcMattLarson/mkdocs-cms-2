@@ -39,8 +39,7 @@ You will need to right-click the file, and then click ‘Mount’ in order to l
 
 # 4-Team Foundation Server
 
-Install file can be found at:  
-it\\Windows Images\\en_visual_studio_team_foundation_server_2015_x86_x64_dvd_6909713.iso    
+In order to setup TFS, you will need to get the link from one of the other developers.    
 
 You will need to right-click the file, and then click ‘Mount’ in order to load the iso as if it were a disk. Then you will need to click the tfs_server.exe icon.
 
@@ -52,7 +51,9 @@ You will need to right-click the file, and then click ‘Mount’ in order to l
 
 # 5-Windows Features
 
-For this section you will need to hit the windows button and search for "windows features." You are looking for the following option:\
+For this section you will need to hit the windows button and search for "windows features." You are looking for the following option:  
+
 ![Windows Features](/assets/windows-features.PNG)
 
 Under the "Internet Information Services" category, make sure all boxes are checked, except for FTP Server.
+
