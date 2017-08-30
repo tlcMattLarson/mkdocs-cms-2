@@ -143,9 +143,9 @@ Checkboxes created in this way will look like this:
 !!! NOTE
     You can place multiple .checkbox divs inside of the .form-group div and they will stack nicely.
 
-## Checkboxes - Generated Groups
+## Checkboxes - Generated
 
-There are two ways of generating groups of checkboxes: CheckBoxList (for medium sized groups of checkboxes) and CheckBoxDropdown (for large groups of checkboxes).
+If you have data on the back-end (ie. from the server) and you want to render that out into a group of checkboxes, you will want to use one of our HTML Helpers. There are two helpers that can be used for generating groups of checkboxes: CheckBoxList (for medium sized groups of checkboxes) and CheckBoxDropdown (for large groups of checkboxes).
 
 ### Checkbox List - Medium
 
@@ -185,6 +185,9 @@ If you are generating a large group of checkboxes, you will probably want to use
 Checkbox drop-downs created in this way will look like this (when they are expanded):  
 
 ![Checkbox Drop-down](/assets/checkbox-dropdown.PNG)  
+
+These checkbox drop-downs make use of the Semantic UI dropdown.js and transition.js libraries.  
+*Documentation can be found <a href='https://semantic-ui.com/modules/dropdown.html#/settings'>here </a>.*
 
 ## TextArea
 
@@ -266,4 +269,5 @@ If you would like to disable client-side validation on a form element that alrea
 ``` vbnet
 @Html.TextBoxFor(Function(x) x.Item, New With {.class = "form-control", .data_val = "false"})
 ```
+
 
