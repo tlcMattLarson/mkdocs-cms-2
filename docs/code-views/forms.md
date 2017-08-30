@@ -1,6 +1,12 @@
+---
+title: Forms
+date: 2017-08-30T19:51:49.787Z
+---
 # Forms
 
 # Form Elements
+
+This section will document proper implementations of various form input elements.
 
 ## Input Types
 
@@ -113,6 +119,73 @@ Here is a table with all the various types:
  </tbody></table>
 *Source: <a href="https://www.w3schools.com/tags/att_input_type.asp" target="_top">W3 Schools</a>*
 
+## Checkbox
+
+For a single checkbox, you will need to use the following code block:
+
+``` vbnet
+<div class="form-group">
+    <div class="checkbox">
+        @Html.CheckBoxFor(Function(m) m.Item)
+        @Html.LabelFor(Function(m) m.Item, New With {.class = "control-label"})
+    </div>
+    <div class="checkbox">
+        @Html.CheckBoxFor(Function(m) m.Item)
+        @Html.LabelFor(Function(m) m.Item, New With {.class = "control-label"})
+    </div>
+</div>
+```
+
+Checkboxes created in this way will look like this:  
+
+![Checkbox](/assets/checkbox.PNG)  
+
+!!! NOTE
+    You can place multiple .checkbox divs inside of the .form-group div and they will stack nicely.
+
+## Checkboxes - Generated Groups
+
+There are two ways of generating groups of checkboxes: CheckBoxList (for medium sized groups of checkboxes) and CheckBoxDropdown (for large groups of checkboxes).
+
+### Checkbox List - Medium
+
+If you are generating a medium sized group of checkboxes, you will probably want to use the CheckBoxList helper. It can be implemented like so:
+
+``` vbnet
+<div class="form-group">
+    @Html.CheckBoxList("Name", FunctionThatReturnsAMultiSelectList(Model.Values, Tools.eTOOLTYPE.Type), New With {.id = "itemID1"}, 6)
+
+    ' Function Definitions
+    ' Function CheckBoxList(ByVal helper As HtmlHelper, ByVal name As String, ByVal selectList As MultiSelectList, ByVal htmlAttributes As Object) As MvcHtmlString
+    ' Function CheckBoxList(ByVal helper As HtmlHelper, ByVal name As String, ByVal selectList As MultiSelectList, ByVal htmlAttributes As Object, ByVal columnCount As Integer) As MvcHtmlString
+    ' Function CheckBoxList(ByVal helper As HtmlHelper, ByVal name As String, ByVal selectList As MultiSelectList, ByVal htmlAttributes As Object, ByVal columnCount As Integer, ByVal columnSpan As Integer) As MvcHtmlString
+
+</div>
+```
+
+Checkbox lists created in this way will look like this:  
+
+![Checkbox List](/assets/checkbox-list.PNG)  
+
+### Checkbox Drop-down - Large
+
+If you are generating a large group of checkboxes, you will probably want to use the CheckBoxDropdown helper. It can be implemented like so:
+
+``` vbnet
+<div class="form-group">
+    @Html.CheckBoxDropdown("Name", FunctionThatReturnsAMultiSelectList(Model.Values, Tools.eTOOLTYPE.Type), New With {.id = "itemID1"}, 6)
+
+    ' Function Definitions
+    ' Function CheckBoxDropdown(ByVal helper As HtmlHelper, ByVal name As String, ByVal selectList As MultiSelectList, ByVal htmlAttributes As Object) As MvcHtmlString
+    ' Function CheckBoxDropdown(ByVal helper As HtmlHelper, ByVal name As String, ByVal selectList As MultiSelectList, ByVal htmlAttributes As Object, ByVal itemsPerRow As Integer) As MvcHtmlString
+
+</div>
+```
+
+Checkbox drop-downs created in this way will look like this (when they are expanded):  
+
+![Checkbox Drop-down](/assets/checkbox-dropdown.PNG)  
+
 ## TextArea
 
 ### Standard
@@ -193,3 +266,4 @@ If you would like to disable client-side validation on a form element that alrea
 ``` vbnet
 @Html.TextBoxFor(Function(x) x.Item, New With {.class = "form-control", .data_val = "false"})
 ```
+
