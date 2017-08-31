@@ -202,9 +202,8 @@ If you would like to create a Word-like text editor box, you will want to implem
 First you will need to include the following css and javascript libraries like so:
 
 ``` vbnet
-@Html.RequireScriptFile("/Scripts/Trumbowyg/trumbowyg.js", 3, TLC.Constants.SCRIPTS_FOOTER)
-@Html.RequireScriptFile("/Scripts/Trumbowyg/tlcTrumbowygInit.js", 2, TLC.Constants.SCRIPTS_FOOTER)
-@Html.RequireCSSFile("/Content/Trumbowyg/trumbowyg.css", 3, TLC.Constants.SCRIPTS_HEADER)
+@Html.RequireScriptFile("/bundles/trumbowyg-bundle", 1, TLC.Constants.SCRIPTS_FOOTER)
+@Html.RequireCSSFile("/Content/trumbowyg-bundle", 1, TLC.Constants.SCRIPTS_HEADER)
 ```
 
 Then you will need to add a textarea element to your form.
@@ -269,5 +268,6 @@ If you would like to disable client-side validation on a form element that alrea
 ``` vbnet
 @Html.TextBoxFor(Function(x) x.Item, New With {.class = "form-control", .data_val = "false"})
 ```
+
 
 
