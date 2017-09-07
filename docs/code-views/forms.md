@@ -227,9 +227,75 @@ Then you will need to add a textarea element to your form.
 
 Now you should have a perfectly functioning version of the Trumbowyg textarea editor.
 
+## Radio
+
+## Radio - Generated
+
+If you have data on the back-end (ie. from the server) and you want to render that out into a group of radio buttons, you will want to use one of our HTML Helpers. There are two helpers that can be used for generating groups of radio buttons: RadioButtonGroup (for small groups of radio buttons) and RadioButtonList (for medium sized groups of radio buttons).
+
+### Radio Button Group - Small
+
+If you are generating a small group of radio buttons (think two or three), you will probably want to use the RadioButtonGroup helper. It can be implemented like so:
+
+``` vbnet
+' basic implementation 1 (280px max width)
+<div class="form-group">
+    @Html.LabelFor("FormItemName",
+        New With {.class = "control-label"}
+    )
+    @Html.RadioButtonGroup("FormItemName",
+        MultiSelectList Object,
+        htmlAttributes, True
+    )
+</div>
+
+' basic implementation 2 (fill parent width)
+<div class="form-group">
+    @Html.LabelFor("FormItemName",
+        New With {.class = "control-label"}
+    )
+    @Html.RadioButtonGroup("FormItemName",
+        MultiSelectList Object,
+        htmlAttributes, False, True
+    )
+</div>
+
+' inline implementation radio buttons filling parent width
+<div class="form-group row">
+    <div class="col-md-3 padding-left-sm">
+        @Html.LabelFor("FormItemName",
+            New With {.class = "control-label"}
+        )
+    </div>
+    <div class="col-md-9 padding-right-sm padding-left-sm">
+        @Html.RadioButtonGroup("FormItemName",
+            MultiSelectList Object,
+            htmlAttributes, True, True
+        )
+    </div>
+</div>
+
+' Function Definitions
+' RadioButtonGroup(
+'     ByVal helper As HtmlHelper,
+'     ByVal name As String,
+'     ByVal selectList As MultiSelectList,
+'     ByVal htmlAttributes As Object,
+'     ByVal addAnAnyOption As Boolean,
+'     Optional ByVal fillParent As Boolean = False
+' )
+```
+
+The three example implementations of the RadioButtonGroup helper listed above create the following three form elements:  
+
+![Radio Button Groups](/assets/radio-button-groups.PNG)  
+
+### Radio Button List - Medium
+
+
 # Client-Side Validation
 
-Because we use JQuery Unobtrusive Validation, you are able to display validation messages on the client-side machines, without having to perform a page refresh. 
+Because we use JQuery Unobtrusive Validation, you are able to display validation messages on the client-side machines, without having to perform a page refresh.
 
 This works because validation attributes have been defined on the server-side entities/models, which then allow the jquery library to generate the required front-end code with very little custom coding on our part.
 
@@ -268,6 +334,3 @@ If you would like to disable client-side validation on a form element that alrea
 ``` vbnet
 @Html.TextBoxFor(Function(x) x.Item, New With {.class = "form-control", .data_val = "false"})
 ```
-
-
-
