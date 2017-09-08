@@ -234,7 +234,7 @@ For a single radio button, you will need to use the following code block:
 ``` vbnet
 <div class="form-group">
     <div class="radio">
-        @Html.RadioButtonFor(Function(m) m.Instruction.worksheetApplicable, Value)
+        @Html.RadioButtonFor(Function(m) m.item, Value)
         @Html.LabelFor(Function(m) m.item, New With {.class = "control-label"})
     </div>
     <div class="radio">
@@ -355,4 +355,5 @@ If you would like to disable client-side validation on a form element that alrea
 ``` vbnet
 @Html.TextBoxFor(Function(x) x.Item, New With {.class = "form-control", .data_val = "false"})
 ```
+
 
