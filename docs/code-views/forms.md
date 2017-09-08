@@ -229,6 +229,25 @@ Now you should have a perfectly functioning version of the Trumbowyg textarea ed
 
 ## Radio
 
+For a single radio button, you will need to use the following code block:
+
+``` vbnet
+<div class="form-group">
+    <div class="radio">
+        @Html.RadioButtonFor(Function(m) m.Instruction.worksheetApplicable, Value)
+        @Html.LabelFor(Function(m) m.item, New With {.class = "control-label"})
+    </div>
+    <div class="radio">
+        @Html.RadioButtonFor(Function(m) m.item, Value2)
+        @Html.LabelFor(Function(m) m.item, New With {.class = "control-label"})
+    </div>
+</div>
+```
+
+Radio buttons created in this way will look like this:  
+
+![Radio Buttons](/assets/Radio.PNG)  
+
 ## Radio - Generated
 
 If you have data on the back-end (ie. from the server) and you want to render that out into a group of radio buttons, you will want to use one of our HTML Helpers. There are two helpers that can be used for generating groups of radio buttons: RadioButtonGroup (for small groups of radio buttons) and RadioButtonList (for medium sized groups of radio buttons).
@@ -293,6 +312,8 @@ The three example implementations of the RadioButtonGroup helper listed above cr
 ### Radio Button List - Medium
 
 
+
+
 # Client-Side Validation
 
 Because we use JQuery Unobtrusive Validation, you are able to display validation messages on the client-side machines, without having to perform a page refresh.
@@ -334,3 +355,4 @@ If you would like to disable client-side validation on a form element that alrea
 ``` vbnet
 @Html.TextBoxFor(Function(x) x.Item, New With {.class = "form-control", .data_val = "false"})
 ```
+
